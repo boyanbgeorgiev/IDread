@@ -4,40 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ID Card Reader</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-        }
-        #container {
-            text-align: center;
-        }
-        #image-preview {
-            max-width: 300px;
-            margin-bottom: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="container">
         <h1>ID Card Reader</h1>
         <form id="upload-form">
+            <label for="image-input" id="image-input-label">Choose Image</label>
             <input type="file" id="image-input" accept="image/*">
-            <button type="submit">Upload Image</button>
+            <button type="submit" style="display:none;">Upload Image</button>
         </form>
         <div id="image-preview"></div>
     </div>
 
     <script>
-        document.getElementById('upload-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent form submission
-
+        document.getElementById('upload-form').addEventListener('change', function(event) {
             var fileInput = document.getElementById('image-input');
             var imagePreview = document.getElementById('image-preview');
 
