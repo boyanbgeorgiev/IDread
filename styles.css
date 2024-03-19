@@ -1,62 +1,26 @@
-/* styles.css */
-
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-}
-
-h1 {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 24px;
-    color: #333;
-}
-
-#dropzone {
+  }
+  
+  .dropzone {
     border: 2px dashed #ccc;
-    background-color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 500px;
-}
-
-#file {
-    display: none;
-}
-
-label {
-    cursor: pointer;
-}
-
-#file-name {
-    display: block;
-    margin-top: 10px;
-    font-size: 14px;
-}
-
-#results {
-    margin-top: 20px;
-    text-align: center;
-}
-
-#results p {
-    font-size: 16px;
-    color: #333;
-}
-
-input[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
     border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    width: 300px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-input[type="submit"]:hover {
-    background-color: #0056b3;
-}
+  }
+  
+  .prompt {
+    font-size: 16px;
+  }
+  
+  #fileList {
+    margin-top: 20px;
+  }
+  
+  .file-item {
+    margin-bottom: 5px;
+  }
+  
